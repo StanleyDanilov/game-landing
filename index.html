@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCSS Compiler</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <main class="main">
+    <header class="header">
+      <a href="#"><img src="img/logo.svg" alt="logo" class="header__logo"></a>
+
+      <nav class="header__navbar">
+        <ul>
+          <li><a href="#">main</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">game features</a></li>
+          <li><a href="#">system requirements</a></li>
+          <li><a href="#">quotes</a></li>
+        </ul>
+      </nav>
+      <div class="header__platforms">
+
+        <div class="header__platforms-language">
+          <div onclick="getDropMenu()" class="drop-button">eng</div>
+          <div id="dropmenu" class="dropmenu-content">
+            <div class="dropmenu-content__item">rus</div>
+            <div class="dropmenu-content__item">fra</div>
+            <div class="dropmenu-content__item">deu</div>
+          </div>
+        </div>
+        <img src="img/xbox-icon.svg" alt="xbox" class="header__platforms-xbox">
+        <img src="img/steam-icon.svg" alt="steam" class="header__platforms-steam">
+      </div>
+    </header>
+    <h1 class="main__title">survive at all costs</h1>
+    <h3>Experience new social battle royale game</h3>
+    <a href="#" class="main-button">
+      <span>Buy Now on Steam</span>
+      <img src="img/main-button-stick.svg" alt="">
+      <span>$14.99</span>
+    </a>
+    <div class="main__scroll">
+      <span>The story</span>
+      <img src="img/scroll-down.svg" alt="">
+    </div>
+  </main>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
