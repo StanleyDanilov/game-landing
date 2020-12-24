@@ -15,8 +15,21 @@ window.onclick = function(event) {
   }
 }
 
-$(document).ready(function(){
-  $('.slider').slick({
-    
-  });
+$('.slider').slick({
+  centerMode: true,
+  slidesToShow: 1,
+  variableWidth: true
 });
+
+$(document).ready(function() {
+  $('.accordeon-item__trigger').click(function() {
+    const parent = $(this).parent();
+
+    if (parent.hasClass('accordeon-item--active')) {
+      parent.removeClass('accordeon-item--active');
+    } else {
+      $('.accordeon-item').removeClass('accordeon-item--active')
+      parent.addClass('accordeon-item--active')
+    }
+  })
+})

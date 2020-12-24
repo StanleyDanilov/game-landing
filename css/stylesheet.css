@@ -31,9 +31,21 @@ h2 {
 
 h3 {
   font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffb548;
+}
+
+h4 {
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 2px;
+  color: #ffffff;
+}
+
+p {
   color: #ffffff;
 }
 
@@ -42,12 +54,17 @@ a {
   color: #ffffff;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  padding: 21px 15px 0;
+  padding: 21px 15px 450px;
   background-image: url(../img/bg-main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,7 +89,7 @@ a {
   margin-bottom: 7px;
 }
 
-.main h3 {
+.main h4 {
   margin-bottom: 30px;
 }
 
@@ -80,7 +97,7 @@ a {
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
@@ -202,10 +219,17 @@ a {
 }
 
 .about {
-  max-width: 1200px;
-  background: url(../img/bg-about.jpg);
+  background-image: url(../img/bg-about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 255px 15px 280px;
+}
+
+.about .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about__info {
@@ -219,7 +243,52 @@ a {
   margin-bottom: 46px;
 }
 
-.about p {
-  color: #ffffff;
+.slider {
+  width: 50%;
+}
+
+.slider-item {
+  text-align: center;
+}
+
+.features {
+  padding-top: 260px;
+  background-image: url(../img/bg-features.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features h2 {
+  margin-bottom: 70px;
+}
+
+.features .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.accordeon {
+  max-width: 370px;
+  width: 100%;
+  margin-bottom: 260px;
+}
+
+.accordeon-item {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.accordeon-item--active {
+  display: block;
+}
+
+.accordeon-item--active .accordeon-item__content {
+  display: block;
+}
+
+.accordeon-item__content {
+  display: none;
 }
 /*# sourceMappingURL=stylesheet.css.map */
